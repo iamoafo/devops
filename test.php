@@ -1,11 +1,11 @@
 <?php
-$user = "example_user";
-$password = "password";
-$database = "example_database";
+$user = "isaac";
+$password = "isaac";
+$database = "test";
 $table = "todo_list";
 
 try {
-    $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+    $db = new PDO("mysql:host=192.168.56.3;dbname=$database", $user, $password);
     echo " <h1 style=color:red> ". date('l') ."</h1> ";
     echo "time: ".date("h:i:sa") . "<br>";
     echo "date: ".date("Y-m-d");
